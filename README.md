@@ -1,7 +1,14 @@
 # squarespace-extensions
 ## Installation
 Inject the following code onto the site header:
-```<script></script>```
+```
+<script src="https://michaelcuppett.github.io/squarespace-extensions/index.js" type="text/javascript">
+</script>
+<link href="https://michaelcuppett.github.io/squarespace-extensions/index.css" rel="stylesheet" type="text/css"/>
+<script>
+	mjcSqs.config();
+</script>
+```
 
 ## Usage
 ### External links
