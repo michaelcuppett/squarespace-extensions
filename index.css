@@ -1,0 +1,128 @@
+/* Begin secondary navigation */
+  .mjc-secondary-navigation-section {
+    box-shadow: 0px 3px 3px 0px rgb(0 0 0 / 15%);
+    z-index: 1;
+    border-top: 1px solid #e0e0e0;
+  }
+
+  .mjc-secondary-nav-wrapper span {
+    font-size: 1.3em;
+  }
+
+  .mjc-secondary-nav-wrapper p a {
+    text-decoration: none;
+    padding-bottom: 4px;
+    font-size: 0.9em;
+    color: #000000 !important;
+  }
+
+  .mjc-secondary-navigation-active {
+    border-bottom: 1px solid;
+  }
+
+  @media screen and (max-width: 750px) {
+    .mjc-secondary-nav-fe {
+      row-gap: 0px !important;
+    }
+  }
+  
+  @media screen and (min-width: 425px) {
+    .mjc-secondary-nav-fe {
+      grid-template-rows: 0 !important;
+      justify-content: stretch;
+    }
+
+    .mjc-secondary-nav-fe nav {
+      padding-bottom: 20px;
+    }
+
+    .mjc-secondary-nav-wrapper {
+      box-sizing: border-box;
+      display: flex;
+      align-items: flex-start;
+      row-gap: 10px;
+      justify-content: space-around;
+      padding: 12px 0px 15px 0px;
+      max-width: 600px;
+      margin: auto;
+      flex-wrap: wrap;
+    }
+
+    .mjc-secondary-nav-wrapper span {
+      display: block;
+      flex-basis: 100%;
+      text-align: center;
+      padding-bottom: 10px;
+    }
+
+    .mjc-secondary-nav-wrapper p {
+      margin: 0px;
+      text-align: left;
+      flex-basis: 1;
+      white-space: pre-line !important;
+    }
+  }
+  /* End secondary navigation */
+
+  /* Begin animated menu folder */
+  .header .header-nav-folder-content {
+    border-radius: 4px;
+    margin-top: 8px;
+    transition: 0.2s;
+    transform: translateY(12px);
+    box-shadow: 0px 0px 5px rgb(0,0,0,0.5);
+  }
+
+  .header-nav .header-nav-item--folder:hover .header-nav-folder-content,
+  .header-nav .header-nav-item--folder .header-nav-folder-content.focus-within {
+    transform: translateY(0px) !important;
+  }
+
+  .header .header-nav-folder-content::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 8px;
+    position: absolute;
+    top: -8px;
+    background: transparent;
+    left: 0px;
+  }
+  /* End animated menu folder */
+
+  /* Begin numbered headers */
+
+  .mjc-numbered-header {
+    position: relative;
+  }
+
+  .mjc-numbered-header h2 {
+    font-size: 2rem;
+    line-height: 1.4em;
+  }
+
+  .mjc-numbered-header span {
+    display: block;
+    position: absolute;
+    left: -1em;
+    top: 0px;
+    opacity: 0.5;
+    font-size: 2rem;
+    line-height: 1.4em;
+  }
+
+  @media screen and (max-width: 750px) {
+    .mjc-numbered-header span {
+      left: -0.5em;
+      font-size: 3.5em;
+      top: -0.35em;
+      font-weight: bold;
+      opacity: 0.2;
+    }
+  }
+  /* End numbered headers */
+
+  /* External links */
+  .fas.fa-external-link-alt {
+    margin-left: 0.5em
+  }
