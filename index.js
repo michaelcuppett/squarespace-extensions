@@ -123,5 +123,3 @@ mjcSqs.config = function () {
     secondaryNav();
   }
 }
-
-mjcSqs.config();
