@@ -23,6 +23,12 @@
   @media screen and (max-width: 750px) {
     .mjc-secondary-nav-fe {
       row-gap: 0px !important;
+      grid-template-rows: 0 !important;
+    }
+    
+    .mjc-secondary-nav-fe nav {
+      display: flex;
+      justify-content: space-around;
     }
   }
   
