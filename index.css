@@ -132,3 +132,9 @@
   .fas.fa-external-link-alt {
     margin-left: 0.5em
   }
+
+@media screen and (max-width: 480px) {
+  .mjc-secondary-nav-wrapper {
+    display: none;
+  }
+}
